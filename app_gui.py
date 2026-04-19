@@ -52,8 +52,10 @@ languages = {
 }
 
 # 2. Sidebar Language Selector
-selected_lang = st.sidebar.selectbox("Language / Langue / اللغة", ["English", "Français", "العربية"])
+selected_lang = st.selectbox("Choose your language / Choisissez votre langue / اختر لغتك", ["English", "Français", "العربية"])
 lang = languages[selected_lang]
+
+st.divider()
 
 # 3. Load the Model
 with open('house_model.pkl', 'rb') as f:
